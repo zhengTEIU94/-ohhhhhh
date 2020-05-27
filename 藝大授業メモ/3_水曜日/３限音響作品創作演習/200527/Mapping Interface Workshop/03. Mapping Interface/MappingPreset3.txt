@@ -1,0 +1,6 @@
+1, ThresholdHysteresis Threshold 0.5 Hysteresis 0.1 Max 1.;
+2, TransportFiltering Repetition 1 Duration 11;
+3, Bypass 0.;
+4, Bypass 0.;
+5, Bypass 0.;
+6, Bypass 0.;
