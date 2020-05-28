@@ -1,15 +1,8 @@
-### ライブエレクトロニクス演習
+### Max/msp 参考資料まとめ
 
-ガイダンスとクラス分けだけ
+- [Numeral Creation](https://numeralcreation.info)
+>Max/Msp に関する記事がたくさん載せている　＊＊＊
 
- ![altpng](https://raw.githubusercontent.com/zhengTEIU94/Tei_-/master/藝大授業メモ/5_金曜日/２限森先生/memo.png)
-
-
-
-
-
-
-作品の例：
-
-- [STUDENT WORK: Gesture Lesson](https://www.youtube.com/watch?v=Lct1y4hKe4c)
-- [jucie]
+  + [【Max 8】collの基本的な使い方](https://numeralcreation.info/【max-8】collの基本的な使い方/)
+  + [【Max】uziの使い方](https://numeralcreation.info/uziの使い方/)
+  + [【Max】urnで数値が重ならないランダム出力する](https://numeralcreation.info/urnで数値が重ならないランダム出力する/)
