@@ -50,4 +50,4 @@ ___
 - [(論文読み)Jukebox: A Generative Model for Music Prafulla(VQ-VAEを用いた音楽サンプリング)](https://qiita.com/Fumio-eisan/items/61918c5e8f7ed7c8dcda)  
 
 
--
+
