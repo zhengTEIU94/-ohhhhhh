@@ -8,7 +8,7 @@
   + [Training a Neural Network on MIDI data with Magenta and Python](https://www.twilio.com/blog/training-a-neural-network-on-midi-music-data-with-magenta-and-python)
   + [Generating Nintendo Music Over the Phone in Python with Magenta and Twilio](https://www.twilio.com/blog/generating-nintendo-music-over-the-phone-with-magenta-and-twilio)
 
-  
+
 - [機械学習による音楽の生成についてまとめてみた](https://qiita.com/DaikiSuyama/items/f47f7588c556255a77ef)
 >Magentaの三つのモデルについての解説(日本語)
 
@@ -41,6 +41,8 @@
   + [Googleの作曲家AI「Magenta」を使って、バッハ調のメロディを自動作曲してみた](https://qiita.com/kouichiyoshihara/items/c5575bdef17aafa02233)
   + [Magentaを使ってAI（人工知能）に作曲をさせてみる](http://johoko.blog.fc2.com/blog-entry-29.html)
 
+- [Magenta with ableton live ](https://canplay-music.com/2019/07/04/magenta-studio-live/)
+
 - [用 GAN 生成音乐片段(中文)](http://huisblog.cn/2018/05/24/mg-gan/#more)
 ___
 
@@ -48,6 +50,3 @@ ___
 
 
 - [(論文読み)Jukebox: A Generative Model for Music Prafulla(VQ-VAEを用いた音楽サンプリング)](https://qiita.com/Fumio-eisan/items/61918c5e8f7ed7c8dcda)  
-
-
-
