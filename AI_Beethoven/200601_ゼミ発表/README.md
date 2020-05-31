@@ -18,9 +18,11 @@
 - [Generating Long-Term Structure in Songs and Stories](https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn/)
 > Lookback RNN and Attention RNN の仕組み
 
-- [Polyphony RNN](https://github.com/tensorflow/magenta/tree/master/magenta/models/polyphony_rnn)
+- **[Polyphony RNN](https://github.com/tensorflow/magenta/tree/master/magenta/models/polyphony_rnn)**
 
--   Performance RNN
+
+
+- **Performance RNN**
   + [Music Transformer: Generating Music with Long-Term Structure](https://magenta.tensorflow.org/music-transformer)
   + [Performance RNN: Generating Music with Expressive Timing and Dynamics](https://magenta.tensorflow.org/performance-rnn)
 
