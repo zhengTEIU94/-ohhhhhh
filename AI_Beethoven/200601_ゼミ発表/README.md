@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 ### 目次
-=======
-目次
->>>>>>> 784774e6c9d7340a0092eda209f088972c1b88bb
 
 - [参考文献](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#参考文献)
 - [CODE](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#code)
