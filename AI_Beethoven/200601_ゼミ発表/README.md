@@ -1,5 +1,12 @@
+目次
 
-## 参考文献：
+- [参考文献](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#参考文献)
+- [CODE](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#code)
+  + [Training a 「Elise Mode」](Training a 「Elise Mode」)
+  + [Polyphony Model (Bach)](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#polyphony-model-bach)
+  + [Melody models](https://github.com/zhengTEIU94/-ohhhhhh/tree/master/AI_Beethoven/200601_ゼミ発表#melody-models)
+
+## 参考文献
 
 
 ### Magenta
