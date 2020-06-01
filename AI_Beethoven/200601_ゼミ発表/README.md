@@ -1,6 +1,7 @@
 
 ## 参考文献：
 
+
 ### Magenta
 
 - **Twilio**
@@ -54,7 +55,40 @@ ___
 
 ## CODE
 
-- ### Polyphony Model
+
+- ### Training a 「Elise Mode」
+
+**Building your dataset**
+
+
+    convert_dir_to_note_sequences \
+      --input_dir=/Users/yuzheng/Desktop/magenta/elise_format0   \
+      --output_file=tmp/notesequences.tfrecord \
+      --recursive
+
+
+**Creating SequenceExamples**
+
+
+    polyphony_rnn_create_dataset \
+    --input=/tmp/notesequences.tfrecord \
+    --output_dir=/tmp/polyphony_rnn/sequence_examples \
+    --eval_ratio=0.10
+
+**Training and evaluation**
+
+
+    polyphony_rnn_train \
+    --run_dir=/tmp/polyphony_rnn/logdir/run1 \
+    --sequence_example_file=/Users/yuzheng/Desktop/magenta/elise_format0/tmp/polyphony_rnn/sequence_examples/training_poly_tracks.tfrecord \
+    --hparams="batch_size=64,rnn_layer_sizes=[64,64]" \
+    --num_training_steps=10000
+
+
+
+________________________________________________________________________________
+
+- ### Polyphony Model (Bach)
 
 **Bach_Elise**
 
