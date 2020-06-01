@@ -50,3 +50,31 @@ ___
 
 
 - [(論文読み)Jukebox: A Generative Model for Music Prafulla(VQ-VAEを用いた音楽サンプリング)](https://qiita.com/Fumio-eisan/items/61918c5e8f7ed7c8dcda)  
+
+
+## CODE
+
+________________________________________________________________________________
+Bach_Elise
+
+    polyphony_rnn_generate \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/BACH/polyphony_rnn.mag \
+    --output_dir=/Users/yuzheng/Desktop/magenta/BACH/out/Bach_Elise/1  \
+    --num_outputs=3 \
+    --num_steps=96 \
+    --primer_melody= /Users/yuzheng/Desktop/magenta/BACH/Elise_Harm01.mid
+    --condition_on_primer=false \
+    --inject_primer_during_generation=true
+
+PS : ( space)/Users/yuzheng/Desktop/magenta/BACH/EliseMelody01.mid
+________________________________________________________________________________
+Bach_D
+
+    polyphony_rnn_generate \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/BACH/polyphony_rnn.mag \
+    --output_dir=/Users/yuzheng/Desktop/magenta/BACH/out/Bach_debussy/1 \
+    --num_outputs=3 \
+    --num_steps=128 \
+    --primer_melody= /Users/yuzheng/Desktop/magenta/BACH/DebussyPhrase.mid
+    --condition_on_primer=false \
+    --inject_primer_during_generation=true
