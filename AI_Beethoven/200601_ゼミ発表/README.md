@@ -54,8 +54,9 @@ ___
 
 ## CODE
 
-________________________________________________________________________________
-Bach_Elise
+- ### Polyphony Model
+
+**Bach_Elise**
 
     polyphony_rnn_generate \
     --bundle_file=/Users/yuzheng/Desktop/magenta/BACH/polyphony_rnn.mag \
@@ -67,8 +68,8 @@ Bach_Elise
     --inject_primer_during_generation=true
 
 PS : ( space)/Users/yuzheng/Desktop/magenta/BACH/EliseMelody01.mid
-________________________________________________________________________________
-Bach_D
+
+**Bach_Debussy**
 
     polyphony_rnn_generate \
     --bundle_file=/Users/yuzheng/Desktop/magenta/BACH/polyphony_rnn.mag \
@@ -78,3 +79,47 @@ Bach_D
     --primer_melody= /Users/yuzheng/Desktop/magenta/BACH/DebussyPhrase.mid
     --condition_on_primer=false \
     --inject_primer_during_generation=true
+
+
+________________________________________________________________________________
+- ### Melody models
+
+Test1
+
+    melody_rnn_generate \
+    --config=lookback_rnn \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/lookback_rnn.mag \
+    --output_dir=/Users/yuzheng/Desktop/magenta/out \
+    --num_outputs=3 \
+    --num_steps=512 \
+    --primer_midi=/Users/yuzheng/Desktop/magenta/BACH/EliseMelody01.mid
+
+Test2
+
+    melody_rnn_generate \
+    --config=attention_rnn \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/attention_rnn.mag \
+    --output_dir=/tmp/melody_rnn/generated/TEST_1 \
+    --num_outputs=10 \
+    --num_steps=256 \
+    --primer_melody="[60]"
+
+Test3
+
+    melody_rnn_generate \
+    --config=basic_rnn \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/basic_rnn.mag \
+    --output_dir=/Users/yuzheng/Desktop/magenta/out \
+    --num_outputs=10 \
+    --num_steps=256 \
+    --primer_melody="[60]"
+
+Test4
+
+    melody_rnn_generate \
+    --config=attention_rnn \
+    --bundle_file=/Users/yuzheng/Desktop/magenta/attention_rnn.mag \
+    --output_dir=/Users/yuzheng/Desktop/magenta/out \
+    --num_outputs=10 \
+    --num_steps=256 \
+    --primer_midi=//Users/yuzheng/Desktop/magenta/MIDI/DebussyPhrase.mid
