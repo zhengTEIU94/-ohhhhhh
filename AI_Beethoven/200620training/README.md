@@ -25,8 +25,7 @@
 
 #### Tensorflow-gpu　install
 > Magenta-gpu(1.1.7)をインストールすると、tensorflow-gpu-1.15.3が自動にインストールされる
-
-- Tensorflow-gpu1.15.3に対する
+- Tensorflow-gpu1.15.3の環境設定
  + cuDNN7.4
  + CUDA 10
  + Python 3.5-3.7
