@@ -16,11 +16,11 @@
     * なので、先にTensorflow-gpuの環境設定を用意
 
 - [Tensorflow-gpu](https://www.tensorflow.org/install/gpu)
-      + 実行環境
-        * NVIDIA Driver
-        * cuDNN
-        * CUDA  
-        * Python3
+  + 実行環境
+    * NVIDIA Driver
+    * cuDNN
+    * CUDA  
+　   * Python3
 
 
 #### Tensorflow-gpu　install
