@@ -12,7 +12,7 @@
 
 - [Magenta-gpu(1.1.7)](https://pypi.org/project/magenta-gpu/)
   + Magenta-gpuとMagenta の違い
-    * 自動にTensorflow-gpuがインストールされ
+    * 自動にTensorflow-gpuがインストールされる
 
 
 - [Tensorflow-gpu](https://www.tensorflow.org/install/gpu)
