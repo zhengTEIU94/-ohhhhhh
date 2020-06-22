@@ -7,7 +7,7 @@
 
 ## 環境
 
-### Magenta - Gpu
+### Magenta 
 > GPU
 
 - [Magenta-gpu(1.1.7)](https://pypi.org/project/magenta-gpu/)
