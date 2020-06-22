@@ -57,9 +57,8 @@
   + [windows上にVirtualBoxで仮想環境筑す(ubuntu)](https://www.youtube.com/watch?v=JgurvumloHk)
     * デメリット:
     * 非常にややこしい
-    * [NVIDIAドライバのインストールできません](https://qiita.com/yh0sh/items/957a074f3e54744c4161)
-    * つまり、結局Magenta-gpuバージョン使えなかった
-    * 試したので、皆様やめてください....
+    * [NVIDIAドライバのインストールできません](https://qiita.com/yh0sh/items/957a074f3e54744c4161)ので、結局gpuで学習できなかった
+    * **試したので、皆様やめてください....**
 
 #### Linux
 
