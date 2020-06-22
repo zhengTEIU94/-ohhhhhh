@@ -49,7 +49,7 @@
   + GPUの性能が高い(自分持ってるwindows)
 - デメリット:
   + 環境設定非常に難しい
-  + MagentaのREADEMEに書かれているコマンドは使えない
+  + MagentaのREADEMEに書かれている[コマンド](https://github.com/magenta/magenta/tree/master/magenta/models/polyphony_rnn#generate-a-polyphonic-sequence)は使えない
 - 解決方法:
   + Terminalのコマンドを使わずに、pythonで実行する(Tensorflowの知識も必要)
     * [参考](https://blog.csdn.net/weixin_38090501/article/details/90524647)　＜Chinses
