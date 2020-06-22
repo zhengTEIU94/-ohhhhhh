@@ -1,6 +1,6 @@
 
 
-# GPUでNeural Networkのモデルを速くトレーニングする
+# GPUでNeural Networkのモデルをトレーニング
 > GPUが圧倒的に速い
 
 [【TensorFlow】 CPUとGPUの速度比較](https://qiita.com/yosshi4486/items/1ff037bd1455a64d6d05)
