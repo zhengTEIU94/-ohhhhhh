@@ -1,99 +1,86 @@
 
-### 目次
 
-- windowsで実行
-  + メリット
-    * GPU
-    * 今回のprojectに対して十分
-    * Kimと後藤先生のPCを利用できる
-- Goole Cloud  
-  +  メリット
-    * 処理が早い
-    * 膨大な処理に最適
+# GPUでNeural Networkのモデルを速くトレーニングする
+> GPUが圧倒的に速い
 
+[【TensorFlow】 CPUとGPUの速度比較](https://qiita.com/yosshi4486/items/1ff037bd1455a64d6d05)
 
-##  windowsに実行
+## 環境
 
-- 環境設定
-  + Magenta
-  + Tensoflow GPU M
-  + CUDA
-  + cuDNN
+### Magenta - Gpu
+> GPU
 
+- [Magenta-gpu(1.1.7)](https://pypi.org/project/magenta-gpu/)
+  + Magenta-gpuとMagenta の違い
+    * 自動にTensorflow-gpuがインストール
+    * なので、先にTensorflow-gpuの環境設定を用意
 
-###  Tensoflow GPU インストール
-> Windows環境のTensorFlowでCPUよりも高速で処理が行えるGPUを使えるようにする
-
-![截屏2020-06-2016.38.22](/uploads/9596df2051664eb730b0bf2b5c5feb53/截屏2020-06-2016.38.22.png)
-図1.
-
-参考：[WIN10安装TENSORFLOW（GPU版本）详解（超详细，从零开始）](https://zhuanlan.zhihu.com/p/37086409)
-
-- まずは[Tensoflow Windows環境設定](https://www.tensorflow.org/install/source_windows#gpu)のサイトで必要な環境を確認
-  + Tensoflow_gpu-2.0.0にするから
-  　* Python 3.5 - 3.7
-    * cuDNN 7.4
-    * CUDA 10
-
-#### install 開始
-
-1. Anaconda Promptを開き
-
-2. インストール環境設定(Anaconda 内部)
-
-```
-
-conda creat -n tensorflow pip python = 3.7.6
-
-```
-> pip python = 3.7.6の意味はTensoflowの環境はpython 3.7.6
-
-3. activate TensorFlow
-
-```
-
-activate TensorFlow
-
-```
-
-4. install
-
-```
- pip install --ignore-installed --upgrade tensorflow-gpu
-
-```
-
-#### install テスト
-
-1. test.py のpython　ファイルを用意
-
-```
-import tensorflow as tf
-tf.compat.v1.disable_eager_execution()
-sess = tf.compat.v1.Session()
-a=tf.constant(1)
-b=tf.constant(2)
-print(sess.run(a+b))
-```
-
-2. 先の環境で実行してみる(AnacondaのTensorFLow環境)
-
-```
-
-python test.py
-
-```
-
-3.  結果は３　そして　GPU(device:0)という表示がでたら！　>>>> GPUバージョンのインストール成功！
+- [Tensorflow-gpu](https://www.tensorflow.org/install/gpu)
+      + 実行環境
+        * NVIDIA Driver
+        * cuDNN
+        * CUDA  
+        * Python3
 
 
-### Magenta-gpu 1.1.7 install
+#### Tensorflow-gpu　install
+> Magenta-gpu1.1.7)をインストールすると、tensorflow-gpu-1.15.3が自動にインストールされる
 
-[magenta-gpu](https://pypi.org/project/magenta-gpu/)
+- Tensorflow-gpu1.15.3に対する
+ + cuDNN7.4
+ + CUDA 10
+ + Python 3.5-3.7
+
+ 詳しい内容は[ここ](https://www.tensorflow.org/install/source_windows#gpu)に参照
 
 
+### 開発環境
 
-## refer.
+#### macOS  
+- メリット：
+  + 環境設定簡単
+- デメリット
+  + Mac自身のグラフィックスカードが弱い
+- 解決方法:
+  + 外付けグラフィックスカード
+  + Google Cloud Platform（GCP）
 
-- [WIN10安装TENSORFLOW（GPU版本）详解（超详细，从零开始）](https://zhuanlan.zhihu.com/p/37086409)
-- [TensorFlow2.0 系列开篇： Windows下GPU版本详细安装教程](https://blog.csdn.net/Datawhale/article/details/94518525)
+#### Windows
+- メリット:
+  + グラフィックスカードの性能高い(自分持ってるのは)
+- デメリット:
+  + 環境設定非常に難しい
+  + MagentaのREADEMEに書かれているコマンドは使えない
+- 解決方法:
+  + Terminalのコマンドを使わずに、pythonで実行する(Tensorflowの知識も必要)
+    * [参考](https://blog.csdn.net/weixin_38090501/article/details/90524647)　＜Chinses
+  + [windows上にVirtualBoxで仮想環境筑す(ubuntu)](https://www.youtube.com/watch?v=JgurvumloHk)
+    * デメリット:
+    * 非常にややこしい
+    * [NVIDIAドライバのインストールできません](https://qiita.com/yh0sh/items/957a074f3e54744c4161)
+    * つまり、結局Magenta-gpuバージョン使えなかった
+    * 試したので、皆様やめてください....
+
+#### Linux
+
+- 仮想環境しか使わなかった
+- 環境設定は簡単
+
+## 感想
+
+今回は結果的にうまくいかなかったという挫折報告ですが、以下の内容がわかりました:
+
+- AI学習にとってGPUが必要
+- Tensorflow-gpuの存在
+  * 環境設定
+- Magenta-gpuの存在
+  * 環境設定
+
+
+というわけで、これからの方向はGoogle Cloud Platform(GCP）の使い方法を研究していきたいと思います。
+
+- メリット
+  + 学生割りある
+  + GPUを選択する可能
+- デメリット
+  + 環境設定難しい....
