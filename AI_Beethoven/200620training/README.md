@@ -20,7 +20,7 @@
     * NVIDIA Driver
     * cuDNN
     * CUDA  
-　   * Python3
+    * Python3
 
 
 #### Tensorflow-gpu　install
