@@ -53,13 +53,13 @@
 - 解決方法:
   + Terminalのコマンドを使わずに、pythonで実行する(Tensorflowの知識も必要)
     * [参考](https://blog.csdn.net/weixin_38090501/article/details/90524647)　＜Chinses
-  + [windows上にVirtualBoxで仮想環境筑す(ubuntu)](https://www.youtube.com/watch?v=JgurvumloHk)
+  + [windows上にVirtualBoxで仮想環境筑す(ubuntu)](https://www.youtube.com/watch?v=JgurvumloHk)ウブントゥ
     * デメリット:
     * 非常にややこしい
     * [NVIDIAドライバのインストールできません](https://qiita.com/yh0sh/items/957a074f3e54744c4161)ので、結局gpuで学習できなかった
     * **挫折したので、皆様やめてください....**
 
-#### Linux
+#### Linux(リナックス）
 
 - 仮想環境しか使わなかった
 - 環境設定は簡単
