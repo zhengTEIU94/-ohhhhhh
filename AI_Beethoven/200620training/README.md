@@ -80,7 +80,25 @@
 というわけで、これからの方向はGoogle Cloud Platform(GCP）の使い方法を研究していきたいと思います。
 
 - メリット
+  + 外付けグラフィックスカードを買う必要ない
   + 学生割りある
   + GPUを選択する可能
 - デメリット
   + 環境設定難しい....
+
+## refer.
+
+- [【TensorFlow】 CPUとGPUの速度比較](https://qiita.com/yosshi4486/items/1ff037bd1455a64d6d05)
+- [How to install magenta-gpu with a modern version of CUDA ?](https://github.com/magenta/magenta/issues/1667)
+- [VirtualBoxでtensorflowを実行する【GPU版導入挫折報告】](https://qiita.com/yh0sh/items/957a074f3e54744c4161)
+- [How to Install Linux Ubuntu 18.04 LTS on Windows 10)](https://www.youtube.com/watch?v=JgurvumloHk)
+- [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
+- [Magenta-gpu(1.1.7)](https://pypi.org/project/magenta-gpu/)
+- [Google Magenta に作曲してもらった](https://nasb.hatenablog.com/entry/2019/02/10/114111)
+- [magenta-gpu 1.1.7](https://pypi.org/project/magenta-gpu/)
+- [Magenta魔改记-0：Magetna初见](https://blog.csdn.net/weixin_38090501/article/details/90524627)
+- [Tensorflow Build from source (GPU/CPU)](https://www.tensorflow.org/install/source#linux)
+- [Tensorflow GPU support](https://www.tensorflow.org/install/gpu)
+- [GPU版本Tensorflow及对应CUDA和cuDNN的安装](https://www.fatrabbids.com/2019/09/23/gpu版本tensorflow及对应cuda和cudnn的安装/)
+- [WIN10安装TENSORFLOW（GPU版本）详解（超详细，从零开始）](https://zhuanlan.zhihu.com/p/37086409)
+- [setup magenta in google cloud engine](https://publicityreform.github.io/findbyimage/magenta.html)
